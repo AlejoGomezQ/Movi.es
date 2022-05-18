@@ -2,6 +2,7 @@
   <div id="app">
     <MoviHeader :name="names" />
     <SideMenu />
+    <MoviFooter />
     <router-view />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import MoviHeader from "@/components/Header";
 import SideMenu from "@/components/SideMenu";
+import MoviFooter from "@/components/Footer";
 
 export default {
   name: "app",
@@ -16,6 +18,7 @@ export default {
   components: {
     MoviHeader,
     SideMenu,
+    MoviFooter,
   },
 
   data() {

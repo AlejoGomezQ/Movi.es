@@ -79,7 +79,6 @@ header {
 }
 
 .navbar-brand {
-  font-family: "lato";
   font-weight: bold;
   font-size: 1.5rem;
   color: #ff535b;

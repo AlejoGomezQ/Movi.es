@@ -76,18 +76,23 @@ export default {
 
 <style scoped>
 .side-menu_container {
+    display: inline-grid;
   width: 80px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 160px);
   background: #ff535b;
 }
 
-p{
-    font-size: 0.8rem;
+button {
+    margin-left: -7px;
 }
 
-svg, p {
-    font-family: 'lato';
-    font-weight: bold;
-    color: #ffffff;
+p {
+  font-size: 0.8rem;
+}
+
+svg,
+p {
+  font-weight: bold;
+  color: #ffffff;
 }
 </style>
