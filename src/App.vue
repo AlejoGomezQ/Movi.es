@@ -1,18 +1,21 @@
 <template>
   <div id="app">
     <MoviHeader :name="names" />
+    <SideMenu />
     <router-view />
   </div>
 </template>
 
 <script>
 import MoviHeader from "@/components/Header";
+import SideMenu from "@/components/SideMenu";
 
 export default {
   name: "app",
 
   components: {
     MoviHeader,
+    SideMenu,
   },
 
   data() {

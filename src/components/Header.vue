@@ -74,8 +74,8 @@ export default {
 <style scoped>
 header {
   width: 100%;
+  height: 80px;
   padding: 10px;
-  z-index: 100;
 }
 
 .navbar-brand {
