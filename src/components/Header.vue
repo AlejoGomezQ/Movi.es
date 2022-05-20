@@ -56,12 +56,6 @@
 export default {
   name: "MoviHeader",
 
-  data() {
-    return {
-      numberUser: null,
-    };
-  },
-
   props: {
     name: {
       type: Array,

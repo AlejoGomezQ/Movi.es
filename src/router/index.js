@@ -1,6 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/views/Home.vue";
+
+//Views
+import Home from "@/views/Home";
+import MovieDetail from "@/views/MovieDetail";
 
 Vue.use(VueRouter);
 
@@ -9,6 +12,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/movie-detail",
+    name: "MovieDetail",
+    component: MovieDetail,
   },
 ];
 
