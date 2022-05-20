@@ -76,14 +76,14 @@ export default {
 
 <style scoped>
 .side-menu_container {
-    display: inline-grid;
+  display: inline-grid;
   width: 80px;
   height: calc(100vh - 160px);
   background: #ff535b;
 }
 
 button {
-    margin-left: -7px;
+  margin-left: -7px;
 }
 
 p {
