@@ -11,7 +11,7 @@
         <p class="card-text">
           {{ movie.overview }}
         </p>
-        <a href="/movie-detail" class="btn btn-primary">Ver detaller</a>
+        <a @click.prevent="goToMovie(movie.id)" class="btn">Ver detalle</a>
       </div>
     </div>
   </div>
@@ -34,9 +34,26 @@ export default {
     },
   },
 
+  filters: {
+    textLength(value) {
+      return `${value.subString(0, 100)}...`;
+    },
+  },
+
   computed: {
     fullImageUrl() {
       return `${this.imageUrl}${this.movie.poster_path}`;
+    },
+  },
+
+  methods: {
+    goToMovie(id) {
+      this.$router.push({
+        name: "MovieDetail",
+        params: {
+          id,
+        },
+      });
     },
   },
 };
@@ -45,5 +62,15 @@ export default {
 <style scoped>
 .card {
   width: 18rem;
+}
+
+.btn {
+  border: 1px solid #ff535b;
+  color: #ff535b;
+}
+
+.btn:hover {
+  background: #ff535b;
+  color: #ffffff;
 }
 </style>

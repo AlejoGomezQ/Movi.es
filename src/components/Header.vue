@@ -16,7 +16,10 @@
         </svg>
         Movi.es</a
       >
-      <input class="mr-sm-2" type="text" placeholder="Buscar pelicula" />
+      <div class="search">
+        <input class="mr-sm-2" type="text" placeholder="Buscar pelicula" />
+        <a href="#" class="btn">Buscar</a>
+      </div>
       <div class="user">
         <a
           class="nav-link dropdown-toggle"
@@ -70,6 +73,7 @@ header {
   width: 100%;
   height: 80px;
   padding: 10px;
+  position: relative;
 }
 
 .navbar-brand {
@@ -105,5 +109,16 @@ input:focus {
 
 input:hover::placeholder {
   color: #ff535b;
+}
+
+.btn {
+  padding: 2px 10px;
+  border: 1px solid #ff535b;
+  color: #ff535b;
+}
+
+.btn:hover {
+  background: #ff535b;
+  color: #ffffff;
 }
 </style>

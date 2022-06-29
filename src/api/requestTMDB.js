@@ -1,8 +1,21 @@
-const API_KEY = "api_key=56850f27d2bed417680d8b4c44c012f4";
+// const TMDBApi = {};
 
-const BASE_URL =
-  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&";
+// TMDBApi.BASE_URL = "https://api.themoviedb.org/3";
 
-const API_URL = `${BASE_URL}${API_KEY}`;
+// TMDBApi.API_KEY = "?api_key=56850f27d2bed417680d8b4c44c012f4";
 
-export default API_URL;
+// export default TMDBApi;
+
+import axios from "axios";
+
+const TMDBApi = axios.create({
+  baseURL: "https://api.themoviedb.org/3",
+  headers: {
+    "Content-Type": "application/json;charset=utf-8",
+  },
+  params: {
+    api_key: "56850f27d2bed417680d8b4c44c012f4",
+  },
+});
+
+export default TMDBApi;
