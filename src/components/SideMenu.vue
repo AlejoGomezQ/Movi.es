@@ -89,6 +89,12 @@ button {
   margin-left: -7px;
 }
 
+.btn,
+.btn:focus,
+.btn:active {
+  outline: 0 !important;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -101,5 +107,10 @@ svg,
 p {
   font-weight: bold;
   color: #ffffff;
+}
+
+svg:hover,
+p:hover {
+  color: #dddddd;
 }
 </style>

@@ -5,6 +5,7 @@ import VueRouter from "vue-router";
 import Home from "@/views/Home";
 import MovieDetail from "@/views/MovieDetail";
 import MovieGenres from "@/views/MovieGenres";
+import GenreDetail from "@/views/GenreDetail";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: "/genres",
     name: "MovieGenres",
     component: MovieGenres,
+  },
+  {
+    path: "/genre/:id/:name",
+    name: "GenreDetail",
+    component: GenreDetail,
   },
 ];
 

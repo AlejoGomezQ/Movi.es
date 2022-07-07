@@ -8,7 +8,15 @@
           v-for="(genre, id) in genres"
           :key="id"
         >
-          <h4 :id="'id' + genre.id" class="genre-title">{{ genre.name }}</h4>
+          <router-link
+            :to="{
+              name: 'GenreDetail',
+              params: { id: genre.id, name: genre.name },
+            }"
+            ><h4 :id="'id' + genre.id" class="genre-title">
+              {{ genre.name }}
+            </h4></router-link
+          >
         </div>
       </article>
     </section>
@@ -72,6 +80,16 @@ export default {
   width: 8px;
   height: 8px;
 }
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff535b;
+}
+
 #id28 {
   --idColor: var(--yellow);
 }
